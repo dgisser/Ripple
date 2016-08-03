@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "925841566730",
+    "firebase_url": "https://peeping-tom.firebaseio.com",
+    "project_id": "peeping-tom",
+    "storage_bucket": "peeping-tom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925841566730:android:c06e10709eef5e36",
+        "android_client_info": {
+          "package_name": "com.facebook.peepingtom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925841566730-utastt27686gdllqo817nvk2erbmh6ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmIKL486V6vgmo29Cf7QYS9s_bf7lBX3U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

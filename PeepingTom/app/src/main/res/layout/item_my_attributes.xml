@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/etFirst"
+            android:enabled="true"
+            android:layout_alignParentStart="true"
+            android:imeOptions="actionDone"
+            android:textColor="#000000"
+            android:layout_toStartOf="@+id/spReligion"
+            android:hint="First +"
+            android:layout_alignEnd="@+id/etBirthday"
+            android:layout_weight="1.16" />
+
+        <EditText
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLast"
+            android:hint="Last +"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/etAge"
+            android:layout_toEndOf="@+id/etFirst"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/etBirthday"
+            android:enabled="true"
+            android:textColor="#000000"
+            android:imeOptions="actionDone"
+            android:hint="Birthday+ ( mm/dd/yy)"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/etFirst"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etAge"
+            android:enabled="true"
+            android:imeOptions="actionDone"
+            android:textColor="#000000"
+            android:hint="age+"
+            android:layout_alignTop="@+id/etBirthday"
+            android:layout_alignEnd="@+id/spRegion" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/spGender"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/etBirthday"
+            android:layout_alignParentStart="true">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:id="@+id/spReligion"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/etAge"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="0.89">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="1">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/spCommunityDensity"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="43dp"
+            android:layout_alignTop="@+id/spGender"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal">
+        </Spinner>
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:id="@+id/spRegion"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/spCommunityDensity"
+        android:layout_alignParentEnd="true">
+    </Spinner>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spSexualOrientation"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/spCommunityDensity"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etBirthday">
+    </Spinner>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/llColorButtons">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Color:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_gravity="center"
+            android:id="@+id/tvColorChoose"
+            android:autoText="true" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchButton"
+        android:id="@+id/btnSearch"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/btnDone"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

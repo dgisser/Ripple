@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width= "match_parent"
+    android:layout_height="@dimen/card_height"
+    card_view:cardCornerRadius="3dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:shadowColor="#030202"
+    android:shadowRadius="5"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            tools:src="@drawable/car"
+            android:id="@+id/ivMedia"
+            android:radius= "4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:elevation="4dp"/>
+
+
+        <VideoView
+            android:layout_width="292dp"
+            android:layout_height="384dp"
+            android:id="@+id/vvVideo"
+            android:visibility="visible"
+            android:layout_below="@+id/tvText"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="95dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_shape"
+            android:id="@+id/gradient"
+            android:elevation="5dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:id="@+id/relativeLayout2">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivProfile"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/car"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text = "What does your main mode of transport look like?"
+                android:id="@+id/tvQuestion"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_below="@+id/ivProfile"
+                android:layout_alignParentStart="false" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:id="@+id/btnDelete"
+                android:padding="5dp"
+                android:minHeight="1dp"
+                android:minWidth="5dp"
+                android:layout_below="@+id/btnReport"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="report"
+                android:id="@+id/btnReport"
+                android:minHeight="3dp"
+                android:minWidth="3dp"
+                android:padding="3dp"
+                android:visibility="visible"
+                android:layout_alignTop="@+id/ivProfile"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/tvAuthor"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:layout_alignTop="@+id/ivProfile"
+                android:layout_toEndOf="@+id/ivProfile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/tvCreationDate"
+                android:layout_below="@+id/tvAuthor"
+                android:layout_alignStart="@+id/tvAuthor" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/linearLayout"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/tvQuestion"
+                    android:layout_alignParentStart="true">
+
+
+                    <com.facebook.peepingtom.UI.AutoResizeTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tvText"
+                        tools:text="responese"
+                        android:visibility="gone"
+                        android:textSize="40sp"
+                        android:textAlignment="center"
+                        android:scrollHorizontally="false"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:textStyle="italic"
+                        android:shadowRadius="5"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:gravity="top" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d4d4d4</color>
+    <color name="colorPrimaryDark">#7e7e7e</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="redPastel">#FFB3BA</color>
+    <color name="orangePastel">#FFDFBA</color>
+    <color name="yellowPastel">#ffffba</color>
+    <color name="greenPastel">#89E894</color>
+    <color name="bluePastel">#bae1ff</color>
+    <color name="purplePastel">#B19CD9</color>
+
+    <color name="redAccent">#ff5263</color>
+    <color name="orangeAccent">#f88f16</color>
+    <color name="yellowAccent">#FCC200</color>
+    <color name="greenAccent">#29ae45</color>
+    <color name="blueAccent">#007cdb</color>
+    <color name="purpleAccent">#6947a9</color>
+    <color name="transp">#8c3a3a53</color>
+</resources>
